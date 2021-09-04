@@ -6,6 +6,7 @@ import { ClassicalFetchA } from './components/ClassicalFetchA'
 import { ClassicalFetchB } from './components/ClassicalFetchB'
 import { Layout } from './components/Layout'
 import { MainContext } from './components/MainContext'
+import { MainRTKit } from './components/MainRTKit'
 import { ReactQueryA } from './components/ReactQueryA'
 import { ReactQueryB } from './components/ReactQueryB'
 import { StateProvider } from './context/StateProvider'
@@ -40,6 +41,9 @@ const App: VFC = () => {
               </Route>
               <Route exact path={'/main-context'}>
                 <MainContext/>
+              </Route>
+              <Route exact path={'/main-rtkit'}>
+                <MainRTKit/>
               </Route>
             </Switch>
           </Layout>
